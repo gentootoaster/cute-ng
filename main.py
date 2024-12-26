@@ -2,6 +2,7 @@ import itertools
 import string
 import time
 import subprocess
+import sys
 
 animation_duration = 3 
 end_time = time.time() + animation_duration
