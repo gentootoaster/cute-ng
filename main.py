@@ -1,5 +1,6 @@
 import itertools
 import string
+import time
 import subprocess
 
 animation_duration = 3 
