@@ -2,7 +2,7 @@ import itertools
 import string
 import subprocess
 
-print("~ Welcum to cute-ng UwU!\nP.S: It basiclly takes something around 500 years to guess a 10 symbols password, so good luck I guess")
+print("~Welcum to cute-ng UwU!\nP.S: It's basiclly takes something around 500 years to guess a 10 symbols password, so good luck I guess")
 
 def network_searcher():
     subprocess.run(['nmcli', 'device', 'wifi'])
@@ -10,7 +10,7 @@ def network_searcher():
     return network
 
 def password_guesser(network):
-    charset = string.ascii_lowercase 
+    charset = string.ascii_lowercase + string.digits + string.ascii_uppercase
     min_length = int(input("Minyamal passuwurd lenght? (Enter int valuwue): "))
     max_length = int(input("Maximal passuwurd lenght? (Enter int valuwue): "))
 
