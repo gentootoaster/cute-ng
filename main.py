@@ -30,8 +30,7 @@ for length in range(min_length, max_length + 1):
         
         result = subprocess.run(['nmcli', 'device', 'wifi', 'connect', network, 'password', guess_password], # Пытается подключится к сети сгенерерованым паролем 
                                 text=True, capture_output=True)
-
-
+        
        # Как выяснилось лучше проверять через nmcli device status
         # А еще лучше проверять через чето другое, но я глупость-глупая >w<
         if "successfully" in result.stdout:
