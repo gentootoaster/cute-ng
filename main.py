@@ -4,7 +4,7 @@ import time
 import subprocess
 
 animation_duration = 3 
-end_time = time.time() + duration
+end_time = time.time() + animation_duration
 
 while time.time() < end_time:
     for char in '|/-\\':
