@@ -13,7 +13,7 @@ while time.time() < end_time:
         sys.stdout.flush()
         time.sleep(0.1)
 
-sys.stdout.write('\rLOwOding complete!    \n') 
+sys.stdout.write('\rLOwOding complete!    \n')
 
 subprocess.run(['nmcli', 'device', 'wifi'])
 network = input("Which netUwUrk to cryack? (Enter full netUwUrk name): ")
@@ -38,9 +38,3 @@ for length in range(min_length, max_length + 1):
     break
 else:
     print("PassUwUrd wasn't foUwUnd... >~<")
-
-try:
-    if __name__ == "__main__":
-        pass
-except KeyboardInterrupt:
-    print("bye...")
