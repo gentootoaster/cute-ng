@@ -2,7 +2,7 @@ import itertools
 import string
 import subprocess
 
-print("~Welcum to cute-ng UwU!\nP.S: It basiclly takes something around 500 years to guess an 10 symbols password, so good luck I guess")
+print("~ Welcum to cute-ng UwU!\nP.S: It basiclly takes something around 500 years to guess a 10 symbols password, so good luck I guess")
 
 def network_searcher():
     subprocess.run(['nmcli', 'device', 'wifi'])
